@@ -61,15 +61,19 @@ class UserController extends Controller
             ["email" => $email],
             [
                 "email" => $email,
-                "user_id" => $request->user()->id
+                "user_id" => $request->user()->id,
             ]
         );
 
         if($subscriber->status === 'active') return response()->json([
             "message" => "Already Subscribed",
             "status" => "subscribed"
+        ], 403);
+
+
+        Emails::where("email", $email)->update([
+            "status" => "active",
         ]);
-        else $subscriber->update(["status" => "active"]);
         
         Mail::to($email)->send(new NewsletterMail());
         
@@ -82,11 +86,9 @@ class UserController extends Controller
     // newsletter unsubscription
     public function newsletterUnsubscription(Request $request)
     {
-        $subscriber = User::find($request->user()->id);
+        $subscriber = $request->user();
 
-        Emails::where('user_id', $subscriber->id)->update([
-            'status' => 'inactive',
-        ]);
+        Emails::where('user_id', $subscriber->id)->delete();
         
         Mail::to($subscriber->newsletter()->first()->email)->send(new UnsubscribeMail());
         

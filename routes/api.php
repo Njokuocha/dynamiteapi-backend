@@ -19,15 +19,11 @@ Route::middleware(["auth:sanctum"])->group(function() {
 
 Route::post('/paystack/webhook', [PaystackController::class, 'handleWebhook']);
 
-
-
 Route::middleware(["auth:sanctum", "throttle:api"])->group(function() {
     Route::get('/us_presidents', [ApiController::class, 'usPresidents']);
     Route::get('/countries', [ApiController::class, 'countries']);
 });
 
-
-// Route::post('/sendmail', [UserController::class, 'sendMail']);
 Route::get('/items', function() {
     return response()->json([
         'fruits' => ["Hola", "Mangoe", "Apple", "Cashew", "Paw-paw", "Strawberry"],
