@@ -23,7 +23,8 @@ class UserController extends Controller
     {
         return response()->json([
             "data" => $request->user(),
-            "newsletter" => $request->user()->newsletter()->first(),
+            "newsletter" => $request->user()->newsletter()
+                            ->where('status', 'active')->first(),
             "upgrades" => Order::where('user_id', $request->user()->id)
                             ->where('status', 'paid')->get(),
         ]);
