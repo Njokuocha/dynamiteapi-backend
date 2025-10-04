@@ -38,8 +38,8 @@ class GoogleAuthController extends Controller
         $token = $user->createToken('auth_token')->plainTextToken;
 
         // Redirect back to React app with token
-        return redirect("http://localhost:3000/auth/callback?token={$token}");
-        // return redirect("https://dynamiteapi.vercel.app/auth/callback?token={$token}");
+        // return redirect("http://localhost:3000/auth/callback?token={$token}");
+        return redirect("https://dynamiteapi.vercel.app/auth/callback?token={$token}");
     }
 
     // Signup redirect
