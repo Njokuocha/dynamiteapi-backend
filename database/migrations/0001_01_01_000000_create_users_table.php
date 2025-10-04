@@ -18,8 +18,9 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('avatar')->nullable();
             $table->string('apiKey')->nullable();
-            $table->string('rlimit')->default(2000);
+            $table->string('rlimit')->default(500);
             $table->string('rfig')->default(0);
+            // $table->string('newsletter')->default('inactive');
             // $table->string('password');
             $table->rememberToken();
             $table->timestamps();

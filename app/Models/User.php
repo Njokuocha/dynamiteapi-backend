@@ -20,6 +20,16 @@ class User extends Authenticatable
      */
     protected $fillable = [ 'name', 'email', 'password', 'avatar', 'rlimit', 'rfig', 'apiKey'];
 
+    public function newsletter()
+    {
+        return $this->hasMany(Emails::class);
+    }
+
+    public function upgrade()
+    {
+        return $this->hasMany(Order::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *

@@ -23,7 +23,9 @@ class ApiController extends Controller
         $json = File::get($path);
 
         User::where('id', $request->user()->id)
-            ->update(['rfig' => DB::raw("rfig + 1")]);
+            ->update([
+                'rfig' => DB::raw("rfig + 1")
+            ]);
 
         return response()->json(json_decode($json, true));
     }
