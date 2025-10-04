@@ -87,22 +87,15 @@ class UserController extends Controller
     public function newsletterUnsubscription(Request $request)
     {
         $subscriber = $request->user();
+        $newsletter = $subscriber->newsletter()->first();
 
         Emails::where('user_id', $subscriber->id)->delete();
         
-        Mail::to($subscriber->newsletter()->first()->email)->send(new UnsubscribeMail());
+        Mail::to($newsletter->email)->send(new UnsubscribeMail());
         
         return response()->json([
             'status' => 'success',
             'message' => 'You Just Unsubscribed to our Newsletter',
         ]);
     }
-
-    // public function sendMail()
-    // {
-    //     Mail::to('njokuochafrancis99@gmail.com')->send(new NewsletterMail());
-    //     return response()->json([
-    //         'message' => 'Mail sent now!'
-    //     ]);
-    // }
 }
