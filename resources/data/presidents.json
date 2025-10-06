@@ -1,0 +1,538 @@
+[
+
+  {
+    "id": 1,
+    "country": "United States of America",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Donald J. Trump",
+      "date_of_birth": "1946-06-14",
+      "place_of_birth": "Queens, New York City, USA",
+      "term_start": "2025-01-20",
+      "term_end": null,
+      "previous_positions": [
+        "45th President of the United States (2017–2021)",
+        "Businessman"
+      ],
+      "political_party": "Republican Party",
+      "biography": "Donald J. Trump is the 47th President of the United States, previously serving as the 45th president (2017–2021) and a businessman and television personality.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Federal presidential constitutional republic",
+    "capital_city": "Washington, D.C.",
+    "continent": "North America",
+    "currency": "United States Dollar (USD)",
+    "official_languages": [
+      "English"
+    ],
+    "population": null
+  }
+  
+  ,
+  {
+    "id": 2,
+    "country": "Nigeria",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Bola Ahmed Tinubu",
+      "date_of_birth": "1952-03-29",
+      "place_of_birth": "Lagos, Nigeria",
+      "term_start": "2023-05-29",
+      "term_end": null,
+      "previous_positions": [
+        "Governor of Lagos State (1999–2007)"
+      ],
+      "political_party": "All Progressives Congress (APC)",
+      "biography": "Bola Ahmed Tinubu is the 16th President of Nigeria, in office since May 29, 2023.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Federal presidential republic",
+    "capital_city": "Abuja",
+    "continent": "Africa",
+    "currency": "Naira (NGN)",
+    "official_languages": [
+      "English"
+    ],
+    "population": null
+  },
+  {
+    "id": 3,
+    "country": "France",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Emmanuel Macron",
+      "date_of_birth": "1977-12-21",
+      "place_of_birth": "Amiens, France",
+      "term_start": "2017-05-14",
+      "term_end": null,
+      "previous_positions": [
+        "Minister of the Economy (2014–2016)"
+      ],
+      "political_party": "Renaissance",
+      "biography": "Emmanuel Macron is the President of France, first elected in 2017 and re-elected in 2022. He is known for centrist and pro-EU policies.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Unitary semi-presidential republic",
+    "capital_city": "Paris",
+    "continent": "Europe",
+    "currency": "Euro (EUR)",
+    "official_languages": [
+      "French"
+    ],
+    "population": null
+  },
+  {
+    "id": 4,
+    "country": "Brazil",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Luiz Inácio Lula da Silva",
+      "date_of_birth": "1945-10-27",
+      "place_of_birth": "Caetés, Brazil",
+      "term_start": "2023-01-01",
+      "term_end": null,
+      "previous_positions": [
+        "President (2003–2011)"
+      ],
+      "political_party": "Workers' Party (PT)",
+      "biography": "Luiz Inácio Lula da Silva, commonly known as Lula, is the 39th President of Brazil and previously served two terms between 2003 and 2011.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Federal presidential constitutional republic",
+    "capital_city": "Brasília",
+    "continent": "South America",
+    "currency": "Brazilian Real (BRL)",
+    "official_languages": [
+      "Portuguese"
+    ],
+    "population": null
+  },
+  {
+    "id": 5,
+    "country": "Russia",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Vladimir Putin",
+      "date_of_birth": "1952-10-07",
+      "place_of_birth": "Leningrad (now Saint Petersburg), Russia",
+      "term_start": "2024-05-07",
+      "term_end": null,
+      "previous_positions": [
+        "President (2000–2008, 2012–present)",
+        "Prime Minister (1999–2000, 2008–2012)"
+      ],
+      "political_party": "Independent / United Russia (support)",
+      "biography": "Vladimir Putin has served as Russia's president for multiple terms and was inaugurated for his most recent term in May 2024.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Federal semi-presidential republic (strong presidency)",
+    "capital_city": "Moscow",
+    "continent": "Europe/Asia",
+    "currency": "Russian Ruble (RUB)",
+    "official_languages": [
+      "Russian"
+    ],
+    "population": null
+  },
+  {
+    "id": 6,
+    "country": "China",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Xi Jinping",
+      "date_of_birth": "1953-06-15",
+      "place_of_birth": "Beijing, China",
+      "term_start": "2013-03-14",
+      "term_end": null,
+      "previous_positions": [
+        "General Secretary of the Chinese Communist Party (2012–present)"
+      ],
+      "political_party": "Chinese Communist Party (CCP)",
+      "biography": "Xi Jinping is the paramount leader of China, serving as General Secretary of the CCP and President of the People's Republic of China.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Single-party socialist republic",
+    "capital_city": "Beijing",
+    "continent": "Asia",
+    "currency": "Renminbi (CNY)",
+    "official_languages": [
+      "Standard Chinese (Mandarin)"
+    ],
+    "population": null
+  },
+  {
+    "id": 7,
+    "country": "India",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Droupadi Murmu",
+      "date_of_birth": "1958-06-20",
+      "place_of_birth": "Uparbeda, Odisha, India",
+      "term_start": "2022-07-25",
+      "term_end": null,
+      "previous_positions": [
+        "Governor of Jharkhand (2015–2021)"
+      ],
+      "political_party": "Bharatiya Janata Party (support)",
+      "biography": "Droupadi Murmu is the 15th President of India and the first tribal woman to hold the office, sworn in on 25 July 2022.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Federal parliamentary democratic republic",
+    "capital_city": "New Delhi",
+    "continent": "Asia",
+    "currency": "Indian Rupee (INR)",
+    "official_languages": [
+      "Hindi",
+      "English (associate)"
+    ],
+    "population": null
+  },
+  {
+    "id": 8,
+    "country": "South Africa",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Cyril Ramaphosa",
+      "date_of_birth": "1952-11-17",
+      "place_of_birth": "Soweto, South Africa",
+      "term_start": "2018-02-15",
+      "term_end": null,
+      "previous_positions": [
+        "Businessman",
+        "Deputy President (2014–2018)"
+      ],
+      "political_party": "African National Congress (ANC)",
+      "biography": "Cyril Ramaphosa is President of South Africa since 2018 and served previously as Deputy President and a business leader.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Unitary parliamentary republic with strong presidency",
+    "capital_city": "Pretoria (administrative)",
+    "continent": "Africa",
+    "currency": "South African Rand (ZAR)",
+    "official_languages": [
+      "11 official languages including English, Zulu, Xhosa"
+    ],
+    "population": null
+  },
+  {
+    "id": 9,
+    "country": "Mexico",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Claudia Sheinbaum Pardo",
+      "date_of_birth": "1962-06-24",
+      "place_of_birth": "Mexico City, Mexico",
+      "term_start": "2024-10-01",
+      "term_end": null,
+      "previous_positions": [
+        "Head of Government of Mexico City (2018–2023)"
+      ],
+      "political_party": "National Regeneration Movement (Morena)",
+      "biography": "Claudia Sheinbaum is the first woman to serve as President of Mexico, taking office in October 2024.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Federal presidential republic",
+    "capital_city": "Mexico City",
+    "continent": "North America",
+    "currency": "Mexican Peso (MXN)",
+    "official_languages": [
+      "Spanish"
+    ],
+    "population": null
+  },
+  {
+    "id": 10,
+    "country": "Argentina",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Javier Milei",
+      "date_of_birth": "1970-10-22",
+      "place_of_birth": "Buenos Aires, Argentina",
+      "term_start": "2023-12-10",
+      "term_end": null,
+      "previous_positions": [
+        "Economist",
+        "National Deputy (2021–2023)"
+      ],
+      "political_party": "La Libertad Avanza",
+      "biography": "Javier Milei is an Argentine economist and politician who became President of Argentina in December 2023.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Federal presidential republic",
+    "capital_city": "Buenos Aires",
+    "continent": "South America",
+    "currency": "Argentine Peso (ARS)",
+    "official_languages": [
+      "Spanish"
+    ],
+    "population": null
+  },
+  {
+    "id": 11,
+    "country": "Turkey",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Recep Tayyip Erdoğan",
+      "date_of_birth": "1954-02-26",
+      "place_of_birth": "Istanbul, Turkey",
+      "term_start": "2014-08-28",
+      "term_end": null,
+      "previous_positions": [
+        "Prime Minister (2003–2014)",
+        "Mayor of Istanbul (1994–1998)"
+      ],
+      "political_party": "Justice and Development Party (AKP)",
+      "biography": "Recep Tayyip Erdoğan has been the President of Turkey since 2014 and previously served as Prime Minister.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Unitary presidential republic (since 2018)",
+    "capital_city": "Ankara",
+    "continent": "Europe/Asia",
+    "currency": "Turkish Lira (TRY)",
+    "official_languages": [
+      "Turkish"
+    ],
+    "population": null
+  },
+  {
+    "id": 12,
+    "country": "Egypt",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Abdel Fattah el-Sisi",
+      "date_of_birth": "1954-11-19",
+      "place_of_birth": "Cairo, Egypt",
+      "term_start": "2014-06-08",
+      "term_end": null,
+      "previous_positions": [
+        "Minister of Defence (2012–2014)"
+      ],
+      "political_party": "Independent / National Progressive Unionist alignment",
+      "biography": "Field Marshal Abdel Fattah el-Sisi has been President of Egypt since 2014 after leading the military intervention in 2013.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Semi-presidential republic with strong military influence",
+    "capital_city": "Cairo",
+    "continent": "Africa",
+    "currency": "Egyptian Pound (EGP)",
+    "official_languages": [
+      "Arabic"
+    ],
+    "population": null
+  },
+  {
+    "id": 13,
+    "country": "Kenya",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "William Ruto",
+      "date_of_birth": "1966-12-21",
+      "place_of_birth": "Kamagut, Kenya",
+      "term_start": "2022-09-13",
+      "term_end": null,
+      "previous_positions": [
+        "Deputy President (2013–2022)"
+      ],
+      "political_party": "United Democratic Alliance (UDA)",
+      "biography": "William Ruto is the 5th President of Kenya, sworn in on 13 September 2022.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Unitary presidential republic",
+    "capital_city": "Nairobi",
+    "continent": "Africa",
+    "currency": "Kenyan Shilling (KES)",
+    "official_languages": [
+      "English",
+      "Swahili"
+    ],
+    "population": null
+  },
+  {
+    "id": 14,
+    "country": "Ghana",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "John Dramani Mahama",
+      "date_of_birth": "1958-11-29",
+      "place_of_birth": "Damongo, Ghana",
+      "term_start": "2025-01-07",
+      "term_end": null,
+      "previous_positions": [
+        "President (2012–2017)",
+        "Vice President (2009–2012)"
+      ],
+      "political_party": "National Democratic Congress (NDC)",
+      "biography": "John Mahama returned to the presidency of Ghana after winning the December 2024 election and being sworn in on 7 January 2025.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Unitary presidential republic",
+    "capital_city": "Accra",
+    "continent": "Africa",
+    "currency": "Ghanaian Cedi (GHS)",
+    "official_languages": [
+      "English"
+    ],
+    "population": null
+  },
+  {
+    "id": 15,
+    "country": "Indonesia",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Prabowo Subianto",
+      "date_of_birth": "1951-10-17",
+      "place_of_birth": "Jakarta, Indonesia",
+      "term_start": "2024-10-20",
+      "term_end": null,
+      "previous_positions": [
+        "Minister of Defence (2019–2024)",
+        "Military commander"
+      ],
+      "political_party": "Gerindra",
+      "biography": "Prabowo Subianto, a former general, became Indonesia's president following the 2024 election and was sworn in in October 2024.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Unitary presidential republic",
+    "capital_city": "Jakarta",
+    "continent": "Asia",
+    "currency": "Indonesian Rupiah (IDR)",
+    "official_languages": [
+      "Indonesian (Bahasa Indonesia)"
+    ],
+    "population": null
+  },
+  {
+    "id": 16,
+    "country": "Philippines",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Ferdinand R. Marcos Jr.",
+      "date_of_birth": "1957-09-13",
+      "place_of_birth": "Manila, Philippines",
+      "term_start": "2022-06-30",
+      "term_end": null,
+      "previous_positions": [
+        "Senator",
+        "Representative"
+      ],
+      "political_party": "PFP (Partido Federal ng Pilipinas) / Coalition",
+      "biography": "Ferdinand 'Bongbong' Marcos Jr. is the 17th President of the Philippines, taking office on 30 June 2022.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Unitary presidential constitutional republic",
+    "capital_city": "Manila",
+    "continent": "Asia",
+    "currency": "Philippine Peso (PHP)",
+    "official_languages": [
+      "Filipino",
+      "English"
+    ],
+    "population": null
+  },
+  {
+    "id": 17,
+    "country": "Colombia",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Gustavo Petro",
+      "date_of_birth": "1960-04-19",
+      "place_of_birth": "Ciénaga de Oro, Colombia",
+      "term_start": "2022-08-07",
+      "term_end": null,
+      "previous_positions": [
+        "Mayor of Bogotá",
+        "Senator"
+      ],
+      "political_party": "Historic Pact for Colombia (Pacto Histórico)",
+      "biography": "Gustavo Petro is a Colombian politician and former mayor of Bogotá who became president in August 2022.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Unitary presidential republic",
+    "capital_city": "Bogotá",
+    "continent": "South America",
+    "currency": "Colombian Peso (COP)",
+    "official_languages": [
+      "Spanish"
+    ],
+    "population": null
+  },
+  {
+    "id": 18,
+    "country": "Pakistan",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Asif Ali Zardari",
+      "date_of_birth": "1955-07-26",
+      "place_of_birth": "Karachi, Pakistan",
+      "term_start": "2024-03-10",
+      "term_end": null,
+      "previous_positions": [
+        "President (2008–2013)",
+        "Co-chairperson of PPP"
+      ],
+      "political_party": "Pakistan People's Party (PPP)",
+      "biography": "Asif Ali Zardari returned to the presidency of Pakistan in March 2024. He previously served as president from 2008 to 2013.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Federal parliamentary republic (ceremonial president)",
+    "capital_city": "Islamabad",
+    "continent": "Asia",
+    "currency": "Pakistani Rupee (PKR)",
+    "official_languages": [
+      "Urdu",
+      "English"
+    ],
+    "population": null
+  },
+  {
+    "id": 19,
+    "country": "Ethiopia",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Taye Atske Selassie",
+      "date_of_birth": null,
+      "place_of_birth": "Ethiopia",
+      "term_start": "2024-10-07",
+      "term_end": null,
+      "previous_positions": [],
+      "political_party": "Independent",
+      "biography": "Taye Atske Selassie was elected President of Ethiopia on 7 October 2024. The presidency in Ethiopia is primarily a ceremonial head of state role.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Federal parliamentary republic (ceremonial president)",
+    "capital_city": "Addis Ababa",
+    "continent": "Africa",
+    "currency": "Ethiopian Birr (ETB)",
+    "official_languages": [
+      "Amharic"
+    ],
+    "population": null
+  },
+  {
+    "id": 20,
+    "country": "Algeria",
+    "official_title": "President",
+    "head_of_state": {
+      "full_name": "Abdelmadjid Tebboune",
+      "date_of_birth": "1945-11-17",
+      "place_of_birth": "M’sila, Algeria",
+      "term_start": "2019-12-19",
+      "term_end": null,
+      "previous_positions": [
+        "Prime Minister (1999) - various ministerial roles"
+      ],
+      "political_party": "National Liberation Front (FLN)",
+      "biography": "Abdelmadjid Tebboune is the President of Algeria, first elected in December 2019 and re-elected in 2024.",
+      "photo": "https://dynamiteapi.vercel.app/images/user.png"
+    },
+    "government_system": "Semi-presidential republic",
+    "capital_city": "Algiers",
+    "continent": "Africa",
+    "currency": "Algerian Dinar (DZD)",
+    "official_languages": [
+      "Arabic",
+      "Berber"
+    ],
+    "population": null
+  }
+]

@@ -9,61 +9,190 @@ use Illuminate\Support\Facades\File;
 
 class ApiController extends Controller
 {
+    // us presidents
     public function usPresidents(Request $request)
     {
+        // check key availability
         $apiKey = $request->header('X-ApiKey');
+        if(!$apiKey) return response()->json([
+           'message' => 'No Api Credential Found' 
+        ], 401);
+
+        // check key validity
         $checkKey = User::where('apiKey', $apiKey)->first();
         if(!$checkKey) return response()->json([
            'message' => 'Invalid Api Credential' 
         ], 401);
+
+        // process request
         $path = resource_path('data/us_presidents.json');
         if (!file_exists($path)) {
             return response()->json(['error' => 'File not found']);
         }
         $json = File::get($path);
+        $feedback = json_decode($json, true);
+    
+        // query - ?limit handler
+        $limit = $request->input('limit');
+        if(!is_numeric($limit) && isset($limit)) return response()->json([
+            "message" => "Invalid Request",
+        ], 400);
+        if($limit){
+            $newItems = collect($feedback);
+            $feedback = $newItems->take($request->input('limit'));
+        }
 
-        User::where('id', $request->user()->id)
+        // query - ?random handler
+        $random = $request->input('random');
+        $accept = ["true", "false"];
+        if(isset($random) && !in_array($random, $accept)) return response()->json([
+            "message" => "Invalid Request",
+        ], 400);
+        if($random && $random === "true"){
+            $randomItems = collect($feedback)->shuffle();
+            $feedback = $randomItems->all();
+        }
+
+        User::where('apiKey', $apiKey)
             ->update([
                 'rfig' => DB::raw("rfig + 1")
             ]);
 
-        return response()->json(json_decode($json, true));
+        return response()->json($feedback);
     }
 
-    public function countries(Request $request)
+    // presidents
+    public function presidents(Request $request)
     {
+        // check key availability
         $apiKey = $request->header('X-ApiKey');
+        if(!$apiKey) return response()->json([
+           'message' => 'No Api Credential Found' 
+        ], 401);
+
+        // check key validity
         $checkKey = User::where('apiKey', $apiKey)->first();
         if(!$checkKey) return response()->json([
            'message' => 'Invalid Api Credential' 
         ], 401);
+
+        // process request
+        $path = resource_path('data/presidents.json');
+        if (!file_exists($path)) {
+            return response()->json(['error' => 'File not found']);
+        }
+        $json = File::get($path);
+        $feedback = json_decode($json, true);
+    
+        // query - ?limit handler
+        $limit = $request->input('limit');
+        if(!is_numeric($limit) && isset($limit)) return response()->json([
+            "message" => "Invalid Request",
+        ], 400);
+        if($limit){
+            $newItems = collect($feedback);
+            $feedback = $newItems->take($request->input('limit'));
+        }
+
+        // query - ?random handler
+        $random = $request->input('random');
+        $accept = ["true", "false"];
+        if(isset($random) && !in_array($random, $accept)) return response()->json([
+            "message" => "Invalid Request",
+        ], 400);
+        if($random && $random === "true"){
+            $randomItems = collect($feedback)->shuffle();
+            $feedback = $randomItems->all();
+        }
+
+        User::where('apiKey', $apiKey)
+            ->update([
+                'rfig' => DB::raw("rfig + 1")
+            ]);
+
+        return response()->json($feedback);
+    }
+
+    // countries
+    public function countries(Request $request)
+    {
+        // check key availability
+        $apiKey = $request->header('X-ApiKey');
+        if(!$apiKey) return response()->json([
+           'message' => 'No Api Credential Found' 
+        ], 401);
+
+        // check key validity
+        $checkKey = User::where('apiKey', $apiKey)->first();
+        if(!$checkKey) return response()->json([
+           'message' => 'Invalid Api Credential' 
+        ], 401);
+
+        // process request
         $path = resource_path('data/countries.json');
         if (!file_exists($path)) {
             return response()->json(['error' => 'File not found']);
         }
 
         $json = File::get($path);
-        User::where('id', $request->user()->id)
-            ->update(['rfig' => DB::raw("rfig + 1")]);
+        $items = json_decode($json, true);
+        $feedback = [];
 
-        return response()->json(json_decode($json, true));
+        foreach($items as $item){
+            $imgs = [
+                "sm" => [
+                    "img1" => "https://flagsapi.com/{$item["code"]}/flat/16.png",
+                    "img2" => "https://flagsapi.com/{$item["code"]}/shiny/16.png",
+                ],
+                "md" => [
+                    "img1" => "https://flagsapi.com/{$item["code"]}/flat/24.png",
+                    "img2" => "https://flagsapi.com/{$item["code"]}/shiny/24.png",
+                ],
+                "lg" => [
+                    "img1" => "https://flagsapi.com/{$item["code"]}/flat/32.png",
+                    "img2" => "https://flagsapi.com/{$item["code"]}/shiny/32.png",
+                ],
+                "xl" => [
+                    "img1" => "https://flagsapi.com/{$item["code"]}/flat/48.png",
+                    "img2" => "https://flagsapi.com/{$item["code"]}/shiny/48.png",
+                ],
+                "xxl" => [
+                    "img1" => "https://flagsapi.com/{$item["code"]}/flat/64.png",
+                    "img2" => "https://flagsapi.com/{$item["code"]}/shiny/64.png",
+                ],
+            ];
+
+            $item["images"] = $imgs;
+            array_push($feedback, $item);
+        }
+
+        // query - ?limit handler
+        $limit = $request->input('limit');
+        if(!is_numeric($limit) && isset($limit)) return response()->json([
+            "message" => "Invalid Request",
+        ], 400);
+        if($limit){
+            $newItems = collect($feedback);
+            $feedback = $newItems->take($request->input('limit'));
+        }
+
+        // query - ?random handler
+        $random = $request->input('random');
+        $accept = ["true", "false"];
+        if(isset($random) && !in_array($random, $accept)) return response()->json([
+            "message" => "Invalid Request",
+        ], 400);
+        if($random && $random === "true"){
+            $randomItems = collect($feedback)->shuffle();
+            $feedback = $randomItems->all();
+        }
+        
+        User::where('apiKey', $apiKey)
+            ->update([
+                'rfig' => DB::raw("rfig + 1")
+            ]);
+
+        return response()->json($feedback);
     }
-    // public function countries(Request $request)
-    // {
-    //     $apiKey = $request->header('X-ApiKey');
-    //     $checkKey = User::where('apiKey', $apiKey)->first();
-    //     if(!$checkKey) return response()->json([
-    //        'message' => 'Invalid Api Credential' 
-    //     ], 401);
-    //     $path = storage_path('app/data/countries.json');
-    //     if (!file_exists($path)) {
-    //         return response()->json(['error' => 'File not found']);
-    //     }
 
-    //     $json = file_get_contents($path);
-    //     User::where('id', $request->user()->id)
-    //         ->update(['rfig' => DB::raw("rfig + 1")]);
-
-    //     return response()->json(json_decode($json, true));
-    // }
 }

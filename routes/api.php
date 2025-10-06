@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PaystackController;
+use App\Http\Controllers\MoreController;
 
 Route::middleware(["auth:sanctum"])->group(function() {
     Route::get('/user/check', [UserController::class, 'checkUser']);
@@ -18,9 +19,11 @@ Route::middleware(["auth:sanctum"])->group(function() {
 });
 
 Route::post('/paystack/webhook', [PaystackController::class, 'handleWebhook']);
+Route::post('/message_us', [MoreController::class, 'messageUs']);
 
-Route::middleware(["auth:sanctum", "throttle:api"])->group(function() {
-    Route::get('/us_presidents', [ApiController::class, 'usPresidents']);
+Route::middleware(["throttle:api"])->group(function() {
+    Route::get('presidents', [ApiController::class, 'presidents']);
+    Route::get('presidents/us_presidents', [ApiController::class, 'usPresidents']);
     Route::get('/countries', [ApiController::class, 'countries']);
 });
 

@@ -6,12 +6,12 @@ use App\Http\Controllers\GoogleAuthController;
 Route::get('/auth/google/redirect', [GoogleAuthController::class, 'redirect']);
 Route::get('/auth/google/callback', [GoogleAuthController::class, 'callback']);
 
-Route::get('/newsletter', function(){
-    return view('emails.newsletter');
-});
-Route::get('/unsubscribe', function(){
-    return view('emails.newsletter_unsubscribe');
-});
+// Route::get('/message_us', function(){
+//     return view('message_us');
+// });
+// Route::get('/unsubscribe', function(){
+//     return view('emails.newsletter_unsubscribe');
+// });
 
 // Route::prefix('auth')->group(function() {
 //     // Signup
