@@ -22,7 +22,8 @@ class MoreController extends Controller
         $subject = $request->subject;
         $message = $request->message;
 
-        Mail::to($email)
+        $sendTo = "francisnjokuocha@gmail.com";
+        Mail::to($sendTo)
             ->send(new MessageusMail($name, $email, $phone_number, $subject, $message));
 
         return response()->json([
